@@ -316,7 +316,7 @@ Server *Server::create_server(int _port, std::string _address) {
     instance->set_notfound("page/404.html");
     instance->get("/index.html", new RequestPage("page/index.html"));
     instance->get("/", new DefaultHandler());
-    instance->get("/billiejean.mp3", new RequestAudio("files/billiejean.mp3"));
+    instance->get("/ghaf.mp3", new RequestAudio("files/ghaf.mp3"));
     instance->get("/report.pdf", new RequestDocument("files/report.pdf"));
     instance->get("/catGif.gif", new RequestImage("files/catGif.jpg"));
     return instance;
